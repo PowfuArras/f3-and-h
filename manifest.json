@@ -1,0 +1,38 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "F3&H by TsranunaPogazu\nBeta APIs required. \nDiscord: @xskt DMs open if u need help! :D (discord.gg/e8R5NMsfkP)",
+        "name": "F3&H",
+        "uuid": "c4074495-3434-40ae-8624-ecb7d0904e1e",
+        "version": [1, 0, 8],
+        "min_engine_version": [1, 21, 2]
+    },
+    "modules": [
+        {
+            "description": "F3&H",
+            "type": "script",
+            "language": "javascript",
+            "uuid": "dfcde46e-b5e4-454e-9403-6fc0fbdbeb24",
+            "version": [1, 0, 8],
+            "entry": "scripts/index.js"
+        }
+    ],
+	"subpacks": [
+		{
+			"folder_name": "deactivation_mode",
+			"name": "Mode: Deactivated.\nUse this if you want to disable this addon's features.\nYou must keep this enabled until all items are transformed.",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "activation_mode",
+			"name": "Mode: Activated.\nUse this if you want to use this addon's features.",
+			"memory_tier": 1
+		}
+	],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.12.0-beta"
+        }
+    ]
+}
